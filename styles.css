@@ -1,0 +1,110 @@
+body{ margin: 0; font-family:"Kumbh Sans";  }
+
+.graphics__illustration-mobile img{
+    display: none;
+}
+
+.graphics__shadow-mobile img{
+    display: none;
+}
+
+.graphics__shadow-desktop img{
+    z-index: -3;
+    position: absolute;
+    top: -28%;
+    left: -23%;
+    width: 900px;
+    margin-right: -100px;
+}
+
+.graphics__illustration-desktop img{
+    z-index: -2;
+    position: absolute;
+    top: 24%;
+    left: 10.5%;
+    width: 450px;
+}
+
+.graphics__box img{
+    position: absolute;
+    top: 42%;
+    left: 9%;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card{ 
+    margin: 0 auto;   
+    display: flex;
+    justify-content: end;
+    width: 920px;
+    height: 480px;
+    border: 50px solid blueviolet ;
+    border-radius: 80px;
+}
+
+.card__textContainer{
+    width: 340px;
+    padding: 70px 100px 0 0;
+}
+
+.card__heading{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card__QandA-list{
+    padding: 0;
+}
+
+.card__QandA-list li{
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+
+.card__qaa-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.card__QandA-list li span{
+    font-size: 0.85rem;
+    display: block;
+  }
+  .card__QandA-list li .card__answer{
+    display: none;
+  }  
+
+  .card__arrowDown{
+      height: 8px;
+      margin: 21px 10px 0 0;
+  }
+
+
+@media (max-width: 400px) {
+
+    .graphics__illustration-desktop img{ display: none;}
+
+    .graphics__illustration-mobile img{ 
+        position: absolute;
+        display: block;}
+
+    .graphics__shadow-desktop img{ display: none;}
+
+    .graphics__shadow-mobile img{ 
+        position: absolute;
+        display: block;}
+
+    .graphics__box img{display: none;}
+
+}
+

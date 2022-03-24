@@ -5,36 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="container">
+    <div class="graphics">
+      <div class="graphics__illustration-mobile"><img src="images/illustration-woman-online-mobile.svg"></div>
+      <div class="graphics__illustration-desktop"><img src="images/illustration-woman-online-desktop.svg"></div>
+      <div class="graphics__shadow-mobile"><img src="images/bg-pattern-mobile.svg"></div>
+      <div class="graphics__shadow-desktop"><img src="images/bg-pattern-desktop.svg"></div>
+      <div class="graphics__box"><img src="images/illustration-box-desktop.svg"></div>
+    </div>
+    <div class="card">
+      <div class="card__textContainer">
+        <div class="card__heading">FAQ</div>
+        <div class="card__QandA">
+          <ul class="card__QandA-list">
+            <li class="card__QandA-1">
+              <div class="card__qaa-container">
+                <span class="card__question card__qaa1">How many team members can I invite?</span>
+                <span class="card__answer card__qaa1">You can invite up to 2 additional users on the Free plan. There is no limit on 
+                  team members for the Premium plan.</span>
+              </div>
+              <img class="card__arrowDown card__qaa1" src="images/icon-arrow-down.svg">
+            </li>
+            <li class="card__QandA-2">
+              <div class="card__qaa-container">
+                <span class="card__question card__qaa2">What is the maximum file upload size?</span>
+                <span class="card__answer card__qaa2">No more than 2GB. All files in your account must fit your allotted storage space.</span>
+              </div>
+              <img class="card__arrowDown card__qaa2" src="images/icon-arrow-down.svg">
+            </li>
+            <li class="card__QandA-3">
+              <div class="card__qaa-container">
+                <span class="card__question card__qaa3">How do I reset my password?</span>
+                <span class="card__answer card__qaa3">Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.
+                </span>
+              </div>
+              <img class="card__arrowDown card__qaa3" src="images/icon-arrow-down.svg">
+            </li>
+            <li class="card__QandA-4">
+              <div class="card__qaa-container">
+                <span class="card__question card__qaa4">Can I cancel my subscription?</span>
+                <span class="card__answer card__qaa4"> Yes! Send us a message and we’ll process your request no questions asked.</span>
+              </div>
+              <img class="card__arrowDown card__qaa4" src="images/icon-arrow-down.svg">
+            </li>
+            <li class="card__QandA-5">
+              <div class="card__qaa-container">
+                <span class="card__question card__qaa4">Do you provide additional support?</span>
+                <span class="card__answer card__qaa4">Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+              </div>
+              <img class="card__arrowDown card__qaa4" src="images/icon-arrow-down.svg">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+  
 </body>
 </html>
